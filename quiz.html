@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Yes/No</title>
+</head>
+<body>
+    <label for="user">Username:</label>
+    <input type="text" id="user" placeholder="Enter username">
+    <br><br>
+    <label>Choice 1:</label><br>
+    <input type="radio" name="choice1" value="yes"> Yes<br>
+    <input type="radio" name="choice1" value="no"> No<br><br>
+    <label>Choice 2:</label><br>
+    <input type="radio" name="choice2" value="yes"> Yes<br>
+    <input type="radio" name="choice2" value="no"> No<br><br>
+    <button onclick="show()">Show</button>
+
+    <script>
+        function show() {
+            var username = document.getElementById('user').value;
+          
+            var yes = 0;
+            var no = 0;
+            
+            inputs.forEach(function(input) {
+                if (input.checked) {
+                    if (input.value === 'yes') {
+                        yes++;
+                    } else if (input.value === 'no') {
+                        no++;
+                    }
+                }
+            });
+
+            alert(`Username = ${username}, Yes = ${yes} && No = ${no}`);
+        }
+    </script>
+</body>
+</html>

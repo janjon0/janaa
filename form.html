@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login & signup & forget password </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+      <div class="login">
+         <h1>login</h1>
+         <input type="text" placeholder="username" id="lu">
+         <input type="password" placeholder="password" id="lp">
+         <button type="button" onclick="login()">login </button>
+      </div>
+      <div class="signup">
+        <h1>signup</h1>
+        <input type="text" placeholder="username" id="su">
+        <input type="password"  placeholder="password" id="sp">
+        <input type="text" placeholder="confirm password" id="scp">
+        <input type="email" placeholder="email" id="se">
+        <select >
+            <option value="">october</option>
+            <option value="">alex</option>
+        </select>
+        <h1>Gender</h1>
+        <h3>female <input type="radio" name="radio" ></h3>
+        <h3>male <input type="radio" name="radio"></h3>
+        <button type="button" onclick="signup()">signup</button>
+      </div>
+      <div class="forgetforget ">
+        <h1>forget password</h1>
+        <input type="text" placeholder="username" id="fu">
+        <input type="password" placeholder="new password" id="fp">
+        <button type="button" onclick="forgetforget()">apdate</button>
+
+      </div>
+    
+
+
+    
+
+    <script src="form.js"></script>
+</body>
+</html>
